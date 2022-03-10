@@ -2,11 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import Menu from './components/Menu';
+import CovidData from './components/CovidData';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
     <Menu />
+    <CovidData/>
   </React.StrictMode>,
   document.getElementById('root')
 );

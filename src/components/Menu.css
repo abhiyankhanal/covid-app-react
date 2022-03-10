@@ -5,11 +5,9 @@
 }
 
 .wrap > div {
- 
-  width: 10wpx;
-  margin-left: 40px;
-  margin: 20px;
+  width: 10em;
+  margin: 1em;
   text-align: center;
   color: antiquewhite;
-  font-size: 20px;
+  font-size: 1em;
 }
