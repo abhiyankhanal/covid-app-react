@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 // import About from './About';
 import PropTypes from "prop-types";
+import {Link} from 'react-router-dom';
 import "./Menu.css";
 
 export class Menu extends Component {
@@ -20,9 +21,11 @@ export class Menu extends Component {
 
     return (
       <div className="wrap">
-        <button onClick={this.handleOnClick}>Covid-19 Data </button>
-        <div>Population Data</div>
-        <div >About-Team-Mars</div>
+        <Link className="my-div" to="/" >CovidData</Link>
+        {/* <button onClick={this.handleOnClick}>Covid-19 Data </button> */}
+        <Link className="my-div" to="/population" >Population</Link>
+        <Link className="my-div" to="/about" >About Team Mars</Link>
+        
         
       </div>
     )
