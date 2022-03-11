@@ -16,7 +16,7 @@ export class Menu extends Component {
   }
   render() {
     const { match, location, history } = this.props;
-    console.log(match, location, history)
+    console.log(`history is ${history}`)
 
     return (
       <div className="wrap">
