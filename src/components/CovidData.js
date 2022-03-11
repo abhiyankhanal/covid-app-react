@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import "./CovidData.css";
+
 export class CovidData extends Component {
     constructor(props)
     {
@@ -30,26 +31,39 @@ export class CovidData extends Component {
     // getCovidData(){
         
     // }
+
+    
+
   render() {
+    const {
+        cases,
+        todayCases,
+        deaths,
+        todayDeaths,
+        active,
+        population,
+        country,
+        updated,
+    } = this.state.responseData
     return (
         <>
         
         
-        <div className='title'> COVID DATA OF {this.state.responseData.country}</div>
+        <div className='title'> Covid Data of {country} <br/> Updated {updated}</div>
         <div className='search'>
             <input type = 'search' placeholder='search..' className='searchTerm' autoFocus id = 'search' value = {this.state.searchValue} onChange={(e)=>this.setSearchValue(e.target.value)}/>
             <button className='searchButton' type='button' onClick={this.getCovidData}>Search</button>
        
         </div>
       <div className='covidwrap'>
-         <div>Cases <br/> {this.state.responseData.cases}</div>
-         <div>Cases Today<br/> {this.state.responseData.todayCases}</div>
-         <div>Total Deaths  <br/> {this.state.responseData.deaths}</div>
+         <div className="covidbox">Cases <br/> {cases}</div>
+         <div className="covidbox">Cases Today<br/> {todayCases}</div>
+         <div className="covidbox">Total Deaths  <br/> {deaths}</div>
 
-         <div>Deaths Today <br/> {this.state.responseData.todayDeaths}</div>
+         <div className="covidbox">Deaths Today <br/> {todayDeaths}</div>
 
-         <div>Active Cases  <br/> {this.state.responseData.active}</div>
-         <div>Population <br/> {this.state.responseData.population}</div>
+         <div className="covidbox">Active Cases  <br/> {active}</div>
+         <div className="covidbox">Population <br/> {population}</div>
 
          
       </div>
