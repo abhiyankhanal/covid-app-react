@@ -26,6 +26,14 @@
   border-radius: 5px;
 
 } */
+
+.myForm{
+  display: flex;
+  width: 100ev;
+  justify-content: center;
+  margin: 30px;
+}
+
 .covidwrap{
  
     display: flex;

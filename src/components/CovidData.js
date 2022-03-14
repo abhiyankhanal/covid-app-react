@@ -68,7 +68,7 @@ export class CovidData extends Component {
           <button className='searchButton' type='button' onClick={this.getCovidData}>Search</button>
         </div> */}
 
-        <form onSubmit={() => this.handleSubmit()}>
+        <form className = "myForm"onSubmit={() => this.handleSubmit()}>
         <label>
           Pick the country:
           <select value={this.state.searchValue} onChange={(e) => this.handleSubmit(e.target.value)}>
