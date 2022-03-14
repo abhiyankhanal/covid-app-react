@@ -7,28 +7,24 @@ import CovidData from './components/CovidData';
 import reportWebVitals from './reportWebVitals';
 import About from './components/About';
 import Population from './components/Population';
-
 export default function App() {
   return (
     <BrowserRouter>
-    <Menu />
-    <Routes>
-    
-    <Route index element={<CovidData />} />
-    <Route path="/about" element={<About />} /> 
-    <Route path="/population" element={<Population/>} /> 
-    </Routes>
-      
+      <Menu />
+      <Routes>
+        <Route index element={<CovidData />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/population" element={<Population />} />
+      </Routes>
     </BrowserRouter>
   );
 }
 ReactDOM.render(
   <React.StrictMode>
-    <App/>
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
-
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
