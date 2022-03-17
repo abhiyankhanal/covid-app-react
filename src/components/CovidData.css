@@ -17,15 +17,25 @@
  
 }
 
-.searchButton{
+/* .searchButton{
   
   background-color: rgb(48, 118, 165);
   color: aliceblue;
   padding:5px;
   margin: 5px;
   border-radius: 5px;
+ 
 
+}  */
+
+.myForm{
+  display: flex;
+  width: 100ev;
+  justify-content: center;
+  margin: 30px;
+ 
 }
+
 .covidwrap{
  
     display: flex;
