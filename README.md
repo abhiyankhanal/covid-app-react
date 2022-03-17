@@ -65,8 +65,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-###The Covid data api
-here : [api] {https://disease.sh/v3/covid-19/countries/nepal?strict=true}
+### Covid Data API REFERENCE
+
+Here: [DISEASE.SH](https://disease.sh/v3/covid-19/countries/nepal?strict=true)
 
 ### `npm run build` fails to minify
 
